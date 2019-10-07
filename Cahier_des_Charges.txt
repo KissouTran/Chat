@@ -1,0 +1,11 @@
+CAHIER DES CHARGES
+
+Interface graphique ( eclipse & windows builder)
+-Chat avec :
+-Bouton Envoyer -> Qui envoie un message au serveur
+-Bouton Rafraichir -> Qui demande la liste des messages au serveur et les affiches
+
+Serveur (Génération d'un template avec SpringBoot)
+-> V2 Demande le nom de l'utilisateur 
+-> Envoie le message de l'utilisateur vers le serveur qui le stock dans la BDD
+-> BDD qui envoie le message stoker vers l'interface graphique qui affiche le message de l'utilisateur 

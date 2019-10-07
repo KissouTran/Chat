@@ -1,0 +1,33 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.9.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+    id 'org.jetbrains.kotlin.jvm' version '1.2.71'
+    id 'org.jetbrains.kotlin.plugin.spring' version '1.2.71'
+    id 'war'
+}
+
+group = 'com.tran'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+    implementation 'org.jetbrains.kotlin:kotlin-reflect'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
+    implementation 'org.springframework.boot:spring-boot-devtools'
+    implementation group: 'org.xerial', name: 'sqlite-jdbc', version: '3.21.0'
+    providedRuntime 'org.springframework.boot:spring-boot-starter-tomcat'
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = "1.8"
+}
